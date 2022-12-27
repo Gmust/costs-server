@@ -39,7 +39,7 @@ export class AuthController {
     await this.userService.registration(createUserDto);
 
     res.statusCode = HttpStatus.CREATED;
-    res.send('user created');
+    res.send('User successfully created');
   }
 
   @UseGuards(RefreshJwtGuard)

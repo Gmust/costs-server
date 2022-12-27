@@ -56,7 +56,6 @@ export class CostsController {
     return await this.costsService.updateCost(updateCostDto, id);
   }
 
-
   @UseGuards(JwtGuard)
   @Delete(':id')
   @HttpCode(HttpStatus.OK)
